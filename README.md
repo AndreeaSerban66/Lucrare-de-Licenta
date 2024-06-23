@@ -1,13 +1,26 @@
-Pentru a rula aplicatie urmatoarele programe software trebuie sa fie instalate : Node.JS, PostgresSQL.
-Trebuie creata o baza de date in PostgresSQL urmand pasii de instalare oferiti de PostgresSQL.
+## Cerințe
 
-Pentru prima pornire a aplicatie trebuie executate in terminal urmatoarele comenzi:
+Pentru a rula această aplicație, următoarele programe software trebuie să fie instalate:
+- [Node.js](https://nodejs.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+
+## Configurarea Bazei de Date
+
+Creează o bază de date PostgreSQL urmând pașii de instalare furnizați de PostgreSQL. Instrucțiuni detaliate de instalare pot fi găsite [aici](https://www.postgresql.org/docs/current/tutorial-install.html).
+
+## Configurarea Inițială
+Următoarele comenzi în terminal trebuie executate pentru a termina configurarea aplicatiei:
+```sh
 npm install
 npx prisma init
 npx prisma migrate dev
+```
+## Rularea aplicatiei
+Pentru a porni aplicatia trebuie executata comanda:
+```sh
 npm run dev
-
-Orice alta rulare a aplicatie se face prin utilizarea comenzii:
-npm run dev
-
-Pentru a vizita site-ul se acceseza urmatorul link: http://localhost:3000
+```
+## Vizualizarea bazei de date
+```sh
+npx prisma studio
+```
